@@ -70,7 +70,9 @@ function zero(){
 	document.getElementById('ecran').value+=0
   }
 function pls(){
-	document.getElementById('ecran').value+='+';
+	num1=document.getElementById('ecran').value;
+  document.getElementById('ecran').value+='';
+  return(num1);
 
   }
   function ce(){
@@ -87,7 +89,30 @@ function moin(){
 function fois(){
    document.getElementById('ecran').value+='*';
  }
- 
+ function show(){
+  x=document.getElementById('ecran');
+  let res=0;
+  for(i=0;i<x.length;i++){
+    if (x.charAt(i)=='+'){
+      res+=x.substr(0,i);
+      x=x.substr(i,x.length);
+    }
+    else if(x.charAt(i)=='-'){
+      res-=x.substr(0,i);
+      x=x.substr(i,x.length);
+    }
+    else if(x.charAt(i)=='*'){
+      res*=x.substr(0,i);
+      x=x.substr(i,x.length);
+    }
+    else if(x.charAt(i)=='/'){
+      res=x.substr(0,i);
+      x=x.substr(i,x.length);
+    }
+
+  }
+
+ }
 
 </script>
 </head>
