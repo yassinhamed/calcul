@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
     <input type="text" id ='ecran'><br>
@@ -36,6 +35,7 @@
   }
 function two(){
     document.getElementById('ecran').value+=2;
+    
 
   }
 function three(){
@@ -90,49 +90,10 @@ function fois(){
    document.getElementById('ecran').value+='*';
  }
  function show(){
- 
-  x=document.getElementById('ecran').value;
-  res=0;
-  a='';
-  lo=0;
-  i=0;
-  n=x;
-  while(i<x.length){
-    if (x.charAt(i)=='+'){
-      a+=n.substr(lo,i);
-      alert(a);
-      res=res+Number(a);
-      a='';
-      
-      lo=i;}
     
-    
-    if (x.charAt(i)=='-'){
-      a+=n.substr(lo,i);
-      alert(a);
-      res=res+Number(a);
-      a='';
-      n=x.substr(i+1,x.length);
-      lo=i}
-
-    if (x.charAt(i)=='+'){
-      a+=n.substr(lo,i);
-      alert(a);
-      res=res+Number(a);
-      a='';
-      n=x.substr(i+1,x.length);
-      lo=i}
-    
-    if (x.charAt(i)=='+'){
-      a+=n.substr(lo,i);
-      alert(a);
-      res=res+Number(a);
-      a='';
-      n=x.substr(i+1,x.length);
-      lo=i}
-    i+=1;}    
-    
-alert(res);
+    x=document.getElementById('ecran').value;
+    x=eval(x);
+    document.getElementById('ecran').value=x;
 
  }
 
