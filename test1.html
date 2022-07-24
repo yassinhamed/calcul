@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <input type="text" id ='ecran'><br>
+    <table>
+        <tr>            
+            <td><button onclick="one()" > 1 </button></td>
+            <td><button onclick="two()" > 2 </button></td>
+            <td><button onclick="three()" >3 </button></td>
+            <td><button onclick="pls()" > + </button></td>
+          </tr>
+          <tr>            
+            <td><button onclick="four()" > 4 </button></td>
+            <td><button onclick="five()" > 5 </button></td>
+            <td><button onclick="six()" >6 </button></td>
+            <td><button onclick="moin()" > - </button></td>
+          </tr>
+          <tr>            
+            <td><button onclick="seven()" > 7 </button></td>
+            <td><button onclick="eight()" > 8 </button></td>
+            <td><button onclick="nine()" >9 </button></td>
+            <td><button onclick="fois()" > *</button></td>
+          </tr>
+          <tr>            
+            <td><button onclick="virg()" > , </button></td>
+            <td><button onclick="zero()" > 0 </button></td>
+            <td><button onclick="show()" > = </button></td>
+            <td><button onclick="ce()" >ce </button></td>            
+          </tr>
+
+    </table>
+<script>
+  function one(){
+    document.getElementById('ecran').value+=1;
+
+  }
+function two(){
+    document.getElementById('ecran').value+=2;
+    
+
+  }
+function three(){
+    document.getElementById('ecran').value+=3;
+
+  }
+function four(){
+    document.getElementById('ecran').value+=4;
+
+  }
+function five(){
+    document.getElementById('ecran').value+=5;
+
+  }
+function six(){
+    document.getElementById('ecran').value+=6;
+
+  }
+function seven(){
+    document.getElementById('ecran').value+=7;
+
+  }
+function eight(){
+    document.getElementById('ecran').value+=8;
+
+  }
+function nine(){
+    document.getElementById('ecran').value+=9
+
+  }
+function zero(){
+	document.getElementById('ecran').value+=0
+  }
+function pls(){
+	num1=document.getElementById('ecran').value;
+  document.getElementById('ecran').value+='+';
+  return(num1);
+
+  }
+  function ce(){
+    document.getElementById('ecran').value="";
+
+  }
+function moin(){
+    document.getElementById('ecran').value+='-';
+
+  }
+ function virg(){
+    document.getElementById('ecran').value+=',';
+ }
+function fois(){
+   document.getElementById('ecran').value+='*';
+ }
+ function show(){
+    
+    x=document.getElementById('ecran').value;
+    x=eval(x);
+    document.getElementById('ecran').value=x;
+
+ }
+
+</script>
+</head>
