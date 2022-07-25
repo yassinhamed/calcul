@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <head>
-    <input type="text" id ='ecran'><br>
+    <br>
     <table>
+      <tr>            
+        <td colspan="4"><input type="text" id ='ecran'></td>
+        
+      </tr>
         <tr>            
             <td><button onclick="one()" > 1 </button></td>
             <td><button onclick="two()" > 2 </button></td>
@@ -84,17 +88,14 @@ function moin(){
 
   }
  function virg(){
-    document.getElementById('ecran').value+=',';
+    document.getElementById('ecran').value+='.';
  }
 function fois(){
    document.getElementById('ecran').value+='*';
  }
- function show(){
-    
-    x=document.getElementById('ecran').value;
-    x=eval(x); //calcul work 
-    document.getElementById('ecran').value=x;
 
+ function show(){
+    document.getElementById('ecran').value=eval(document.getElementById('ecran').value); //calcul work 
  }
 
 </script>
